@@ -1,0 +1,73 @@
+:root {
+  /* Light Theme Colors */
+  --primary-color: #5d3a9b; /* Dark purple */
+  --primary-light: #7a52c1; /* Lighter purple */
+  --primary-dark: #432a73; /* Darker purple */
+  --background-color: #f4f4f4; /* Light gray */
+  --text-color: #333; /* Text color */
+  --card-background: #ffffff; /* Card or section background */
+}
+
+body.light {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+body.dark {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --card-background: #333333;
+  --primary-color: #8a2be2; /* Purple for dark theme */
+  --primary-light: #9b59b6;
+  --primary-dark: #6a0dad;
+}
+
+/* Apply colors globally */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-light);
+}
+
+section {
+  background-color: var(--card-background);
+  color: var(--text-color);
+  padding: 3rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary-light);
+}
+
+body.light {
+  --primary-color: #6a0dad !important; /* dark purple shade */
+}
+
+body.light h1,
+body.light h2,
+body.light h3 {
+  color: var(--primary-color) !important;
+}

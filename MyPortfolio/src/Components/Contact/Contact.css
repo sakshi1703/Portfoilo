@@ -1,0 +1,31 @@
+/* Contact.css */
+.contact {
+    padding: 3rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact.light {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .contact.dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+  
+  .contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+  }
+  

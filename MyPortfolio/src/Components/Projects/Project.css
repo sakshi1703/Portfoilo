@@ -1,0 +1,90 @@
+/* General styling for the projects section */
+.projects {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    transition: color 0.3s ease;
+  }
+  
+  /* Add hover effect to the section */
+  .projects:hover h2 {
+    color: var(--primary-color); /* Change heading color on hover */
+  }
+  
+  /* Projects list container using CSS Grid */
+  .projects-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    gap: 2rem; /* Space between the boxes */
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Responsive adjustments for different screen sizes */
+  @media (max-width: 1024px) {
+    .projects-list {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .projects-list {
+      grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+  }
+  
+  /* Styling for each project box */
+  .project {
+    background-color: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 60%; /* Decrease width to make boxes more compact */
+    height: 300px; /* Adjust height to make the boxes vertically rectangular */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Add transitions for hover effects */
+    text-align: left;
+    margin-bottom: 2rem; /* Add bottom margin for spacing between boxes vertically */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+  }
+  
+  /* Ensuring spacing between the boxes */
+  .projects-list .project {
+    margin-right: 2rem; /* Ensure space between project boxes horizontally */
+  }
+  
+  .project:hover {
+    transform: translateY(-10px); /* Lift the box slightly */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    background-color: #f4f4f4; /* Change background color */
+  }
+  
+  /* Transition effects for text inside the project box */
+  .project h3,
+  .project p {
+    transition: color 0.3s ease; /* Smooth transition for text color */
+  }
+  
+  .project:hover h3,
+  .project:hover p {
+    color: var(--primary-color); /* Change text color on hover */
+  }
+  
+  /* Styling for the GitHub link */
+  .project a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for link color */
+  }
+  
+  .project a:hover {
+    color: #00aaff; /* Change color on hover */
+    text-decoration: underline; /* Underline the link on hover */
+  }
+  
